@@ -34,7 +34,7 @@ List items have an index and are accessed using bracket notation. Just like in J
 ```
 
 ###Modifying a List
-The easiest way to modify a list’s content is to just access the list element by its index (numerical place in the list) and use the assignment operator.
+The easiest way to modify a list’s content is to just access the list element by its index (numerical place in the list) and use the assignment operator. Note that in Python, lists are mutable, which means a list can be changed without being recreated. 
 ```
 >>> groceries
 ['Eggs', 'Milk','Kale']
@@ -45,7 +45,7 @@ The easiest way to modify a list’s content is to just access the list element 
 
 ###Methods to Modify Lists
 
-You can also modify lists using certain list-specific methods.
+You can also modify lists using certain list-specific methods. 
 
 The append method allows you to stick an element at the end of a list. Note that `append()` only takes one argument.
 ```
