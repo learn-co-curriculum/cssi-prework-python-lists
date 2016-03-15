@@ -114,11 +114,10 @@ range(0,100,10)
 
 
 #Loops
-Loops are a common tool is any programing language that let us repeat a section of code over and over, even if we only type it out once. You have already seen loops once in JavaScript, and now that you understand Python's list syntax, it's important to be able to iterate over each item in a list, or (as you'll learn in the next lesson) over other datatypes.
-
+Loops are a common tool in any programing language that let us repeat a section of code over and over, even if we only type it out once. You have already seen loops once in JavaScript, and now that you understand Python's list syntax, it's important to be able to iterate over each item in a list, or (as you'll learn in the next lesson) over other datatypes.
 
 ###For Loops
-The simplest looping situation is where you need to do something _for_ a certain number of times. In this case, the number of iterations is known. To do this, Python uses a for loop.
+The simplest looping situation is where you need to do something _for_ a certain number of times. In this case, the number of iterations is known. To do this, Python uses a `for` loop.
 
 ##### Example 1: Looping Through a List
 
@@ -126,11 +125,16 @@ This code will repeat for every element in the list.
 
 ```python
 for name in ["Lucy", "Ricky", "Ricky Jr."]:
-  print name
+    print name
+  
+> Lucy
+> Ricky
+> Ricky Jr.
 ```
 Note that the variable `name` is what we are calling each element within the list. We could call that variable anything: `character`, `person`, `actor`. It doesn't matter, as long as we continue to use that variable later within the _for_ block.
 
 Alternatively, we can declare a variable `names` which contains a list of all three members in the Ricardo family, and then use the same syntax.
+
 ```python
 #same result, slightly different syntax
 names = ["Lucy", "Ricky", "Ricky Jr."]
@@ -143,15 +147,24 @@ The _for_ loop syntax is similar for integers. In the example below, string inte
 
 ```python
 for i in range(1, 4):
-  print "I am looping and am currently on {}.".format(i)
+  print "I am looping and am currently on %d." % i
+
+>> I am looping and am currently on 1.
+>> I am looping and am currently on 2.
+>> I am looping and am currently on 3.
 ```
+Take note: Our range does not include the last number (4)!
 
 You can also declare your variable before the loop. And while `i` is the most common variable name for iteration, any variable name can be used.
 
 ```
 my_range = range(2,5)
 for num in my_range:
-  print "Did you know that {} times 2 is {}.".format(num, num*2)
+  print "Did you know that %d times 2 is %d?" % (num, num*2)
+  
+>> Did you know that 2 times 2 is 4?
+>> Did you know that 3 times 2 is 6?
+>> Did you know that 4 times 2 is 8?
 ```
 ###While Loops
 While loops continue to repeat _while_ - or as long as - a certain condition is met. While loops are used when we're not sure how many iterations (if any) might occur.
@@ -164,6 +177,12 @@ n = 0
 while n < 5:
   print n
   n = n + 1
+  
+>> 0
+>> 1
+>> 2
+>> 3
+>> 4
 ```
 ##### Example 2: A While/Else Loop
 While/Else is a loop type that does not exist in JavaScript. Once a condition is no longer true, the code block inside the else statement is executed.
