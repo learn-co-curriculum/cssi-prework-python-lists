@@ -2,14 +2,16 @@
 #Python Lists and Loops
 
 #Objectives:
-* Create a list in Python syntax
-* Create a for loops and while loops in Python syntax
+* Create a list using Python syntax
+* Create `for` loops and `while` loops using Python syntax
 
 #Motivation:
-In this lesson you will learn how to create Python's version of an array, a list. You will also learn how to use loops in your Python code in order to manipulate or use the elements in that list.
+In this lesson you will learn how to create Python's version of an array, a **list**. You will also learn how to use loops in your Python code in order to manipulate or use the elements in that list.
+
+Code-along with this readme in the Python console. To access the console, type 'python' into the command line. When you're finished, exit by typing 'quit()'
 
 #Lists in Python
-A list is the most basic Python data structure. It is a list of objects or values. The syntax for a list is the same as the syntax for an array in JavaScript: a set of objects enclosed in brackets. You should code-along in the Python console. To access this, your just have to type 'python' into the command line. When you're finished, exit by typing 'quit()'
+A list is the most basic Python data structure. It is a list of objects or values. The syntax for a list is the same as the syntax for an array in JavaScript: a set of objects enclosed in brackets.  
 
 To create an empty list, set a variable equal to empty brackets:
 ```
