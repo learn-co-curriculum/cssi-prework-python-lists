@@ -49,42 +49,68 @@ The easiest way to modify a list’s content is to just access the list element 
 
 You can also modify lists using certain list-specific methods. 
 
+#### `append()`
 The append method allows you to stick an element at the end of a list. Note that `append()` only takes one argument.
 ```
 >>> groceries.append('Asparagus')
 >>> groceries
 ['Bread', 'Milk', 'Kale', 'Asparagus']
 ```
-
+#### `extend()`
 To add more than one element to an existing list, you can use `extend()` which will concatenate lists together.
 ```
-groceries.extend(['Rutabaga', 'Ice Cream'])
+>>>groceries.extend(['Rutabaga', 'Ice Cream'])
 ['Bread', 'Milk', 'Kale', 'Asparagus','Rutabaga', 'Ice Cream']
 ```
-
+#### `del()`
 You can use `del` to remove an element at a specific index.
 ```
-del groceries[3] #removes 'Asparagus' from the list
+>>>del groceries[3] #removes 'Asparagus' from the list
 ['Bread', 'Milk', 'Kale','Rutabaga', 'Ice Cream']
 ```
+
+#### `remove()`
 If you know the value that you'd like removed, you can use `remove()` which looks for the first matching value and removes it from a list.
 
 ```
-groceries.remove('Rutabaga')
+>>>groceries.remove('Rutabaga')
 ['Bread','Milk','Kale','Ice Cream']
 ```
 
+#### `sort()`
 To order a list alphabetically or numerically use sort()
 ```
-groceries.sort()
+>>>groceries.sort()
 ['Bread', 'Ice Cream', 'Kale', 'Milk']
 ```
 
-
-Finally, the `len()` function, you can return the number of items in a list:
+#### `len()`
+The `len()` function returns the number of items in a list:
 ```
 print len(groceries)
-3
+4
+```
+#### `insert()`
+The `insert()` function inserts an item into a list at a specific location. It takes two arguments: The index, and the object to be inserted.
+
+```
+>>>groceries.insert(3, 'Marshmallows')
+['Bread', 'Ice Cream', 'Kale', 'Marshmallows', 'Milk']
+```
+
+#### `pop()`
+Removes the last item in the list.
+```
+>>>groceries.pop()
+['Bread', 'Ice Cream', 'Kale', 'Marshmallows']
+```
+
+#### `reverse()`
+Reverses the order of the entire list
+
+```
+>>>groceries.reverse()
+['Marshmallows', 'Kale', 'Ice Cream', 'Bread']
 ```
 
 ### 'In' and 'Not' Operators
@@ -92,7 +118,7 @@ print len(groceries)
 You can use 'in' to check the condition that a value exists within a list.
 ```python
 if 'Kale' in groceries:
-  print "Thank gosh we're not missing out on this super food."
+  print "Thank goodness we're not missing out on this super food."
 else:
   print 'Buy all the kale!'
 ```
