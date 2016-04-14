@@ -29,8 +29,19 @@ List items have an index and are accessed using bracket notation. Just like in J
 'Eggs'
 >>> groceries[1]
 'Milk'
+```
+To get a range of values, you can slice a list by using two indices, for the starting and stopping places. 
+```
 >>> groceries[0:2]
 ['Eggs', 'Milk']
+```
+If you omit the starting index, the list will be sliced from the beginning up until the ending index.
+```
+>>> groceries[:2]
+['Eggs', 'Milk']
+```
+Omitting the final index will include all elements after the starting index.
+```
 >>> groceries[1:]
 ['Milk', 'Kale']
 ```
