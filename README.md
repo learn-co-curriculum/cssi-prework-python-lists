@@ -99,9 +99,12 @@ The `insert()` function inserts an item into a list at a specific location. It t
 ```
 
 #### `pop()`
-Removes the last item in the list.
+Removes the last item in the list and returns that value
 ```
->>>groceries.pop()
+>>>last_item=groceries.pop()
+>>>last_item
+'Milk'
+>>>groceries
 ['Bread', 'Ice Cream', 'Kale', 'Marshmallows']
 ```
 
