@@ -115,6 +115,13 @@ Reverses the order of the entire list
 >>>groceries.reverse()
 ['Marshmallows', 'Kale', 'Ice Cream', 'Bread']
 ```
+#### `count()`
+Counts how many times a value occurs in the list
+```
+bucket_list=['Paint', 'Chicken', 'Sand', 'Beer', 'Paint']
+>>>bucket_list.count('Paint')
+2
+```
 
 ### 'In' and 'Not' Operators
 
